@@ -1,0 +1,44 @@
+/*
+none: This value removes any text decoration, such as underlines, overlines, or line-throughs.
+!important: When !important is used, this rule will override any other text-decoration rules applied to the same element, regardless of their specificity or order in the stylesheet.
+*/
+
+
+a{
+    text-decoration: none !important;
+}
+
+/*
+When auto is used for the left and right margins, 
+it centers the element horizontally within its containing element. 
+*/
+
+.btn-body{
+    height: 60px;
+    width: 60px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    flex-direction: column;
+    margin: 5px auto;
+    transition: all 0.4s ease;
+}
+
+.btn-body.active{
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.btn-body:hover{
+    color: #ffffff;
+}
+
+.btn-title{
+    margin: 4px auto;
+    font-weight: 600;
+    font-size: 12px;
+
+    
+}
