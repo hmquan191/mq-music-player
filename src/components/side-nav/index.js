@@ -1,14 +1,22 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './sidenav.css'
 import SidenavButton from './sidenavButton'
 import { IoLibrary} from 'react-icons/io5'
 import { MdFavorite, MdSpaceDashboard } from 'react-icons/md'
 import { FaGripfire, FaPlay, FaSignOutAlt } from 'react-icons/fa'
+import apiClient from '../../spotify'
 
 export default function Sidenav() {
+  const [image, setImage] = useState(
+    "https://i.scdn.co/image/ab6775700000ee8553b8ae1754735243ad484cfc"
+  )
+  useEffect(() => {
+    apiClient.get("me").then(response => 
+      setImage(response.data.images[0].url))
+  }, [])
   return (
     <div className='sidenav-container'>
-        <img src= 'https://i.pinimg.com/736x/d0/c4/22/d0c42271fa501e3b3df4637cf479c8a3.jpg' 
+        <img src= {image}
         className='profile-picture' 
         alt='profile-pic'/>
       <div>
@@ -16,10 +24,10 @@ export default function Sidenav() {
         <SidenavButton title="Trending" to="/trending" icon={<FaGripfire/>}/>
         <SidenavButton title="Player" to="/player" icon={<FaPlay/>}/>
         <SidenavButton title="Favorites" to="/favorites" icon={<MdFavorite/>}/>
-        <SidenavButton title="Library" to="/library" icon={<IoLibrary/>}/>
+        <SidenavButton title="Library" to="/" icon={<IoLibrary/>}/>
       </div>
 
-      <SidenavButton title="Sign Out" to="/" icon={<FaSignOutAlt/>}/>
+      <SidenavButton title="Sign Out" to="" icon={<FaSignOutAlt/>}/>
     </div>
 
   )
