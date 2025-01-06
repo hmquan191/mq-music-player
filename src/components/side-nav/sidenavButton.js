@@ -14,7 +14,7 @@ export default function SidenavButton(props) {
   return (
     <Link to={props.to}>
         <div className={btnClass}>
-            <IconContext.Provider value={{size: "24px", className: "btn-icon"}}>
+            <IconContext.Provider value={{size: "26px", className: "btn-icon"}}>
             {props.icon}
             <p className='btn-title'>{props.title}</p>
             </IconContext.Provider>

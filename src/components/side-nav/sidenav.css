@@ -12,4 +12,8 @@
     height: 70px;
     border-radius: 20px;
     margin-top: 20px;
+    box-shadow: 
+    0 0 10px rgba(100, 149, 237, 0.5),  /* Cornflower Blue */
+    0 0 20px rgba(100, 149, 237, 0.3), 
+    0 0 30px rgba(100, 149, 237, 0.2);
 }

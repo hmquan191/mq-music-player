@@ -5,7 +5,7 @@ import Feed from '../feed'
 import Trending from '../trending'
 import Player from '../player'
 import Favorites from '../favorites'
-
+import RedVelvet from '../../redvelvet'
 import './home.css'
 import Sidenav from '../../components/side-nav'
 import Login from '../auth/login'
@@ -33,18 +33,23 @@ export default function Home() {
   return !token ? (
     <Login/>
     ) : (
+
+      
     <Router>
       <div className='main-body'>
-        
-        <Sidenav/>
-        <Routes>
-            <Route path ="/" element={<Library/>} />
-            <Route path = "/feed" element={<Feed/>} />
-            <Route path ="/trending" element={<Trending/>} />
-            <Route path = "/player" element={<Player/>} />
-            <Route path ="/favorites" element={<Favorites/>} />
-        </Routes>
+        <Sidenav /> {/* Sidenav luôn nằm bên trái */}
+        <div className="content"> {/* Nội dung chính */}
+          <Routes>
+            <Route path="/" element={<Library />} />
+            <Route path="/feed" element={<Feed />} />
+            <Route path="/trending" element={<Trending />} />
+            <Route path="/player" element={<Player />} />
+            <Route path="/favorites" element={<Favorites />} />
+            <Route path="/redvelvet" element={<RedVelvet />} />
+          </Routes>
+        </div>
       </div>
     </Router>
+
   )
 }

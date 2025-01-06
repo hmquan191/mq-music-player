@@ -25,8 +25,8 @@ export default function Sidenav() {
         <SidenavButton title="Player" to="/player" icon={<FaPlay/>}/>
         <SidenavButton title="Favorites" to="/favorites" icon={<MdFavorite/>}/>
         <SidenavButton title="Library" to="/" icon={<IoLibrary/>}/>
+        <SidenavButton title="RedVelvet" to ="/redvelvet" ></SidenavButton>
       </div>
-
       <SidenavButton title="Sign Out" to="" icon={<FaSignOutAlt/>}/>
     </div>
 
