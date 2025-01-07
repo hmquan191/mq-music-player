@@ -15,5 +15,6 @@
     display: flex; /* Căn giữa nội dung bên trong */
     justify-content: center;
     align-items: center;
+    border-radius: 30px;
   }
   

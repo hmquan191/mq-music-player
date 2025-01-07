@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './redvelvet.css';
-import { FaBirthdayCake } from 'react-icons/fa';
+
 
 export default function RedVelvet() {
   useEffect(() => {

@@ -1,6 +1,10 @@
 .screen-container{
-    width: calc(100% - 100px);
+
+    /* width: calc(100% - 100px); theo video*/
+
+    
+    flex: 1; /* lay toan bo*/
     height: 100%;
     background-color: #24293E;
-    border-radius: 30px;
+    /* border-radius: 30px; */
 }
