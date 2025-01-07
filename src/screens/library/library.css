@@ -10,7 +10,7 @@
   
 .playlist-card {
     position: relative;
-    width: 15%;
+    width: 10%;
     height: 35%;
     border-radius: 20px;
     background-color: rgb(30, 42, 62);
@@ -42,7 +42,7 @@
 }
   
 .playlist-title {
-    font-weight: 800;
+    font-weight: 600;
     font-size: 16px;
     color: #c4d0e3;
     margin: 10px 0px 10px;
@@ -57,7 +57,6 @@
 .playlist-subtitle {
     font-weight: 400;
     font-size: 12px;
-    margin: 0px;
     color: #c4d0e37c;
 }
   

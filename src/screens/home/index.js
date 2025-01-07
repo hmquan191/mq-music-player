@@ -37,8 +37,8 @@ export default function Home() {
       
     <Router>
       <div className='main-body'>
-        <Sidenav /> {/* Sidenav luôn nằm bên trái */}
-        <div className="content"> {/* Nội dung chính */}
+        <Sidenav /> 
+        <div className="content"> 
           <Routes>
             <Route path="/" element={<Library />} />
             <Route path="/feed" element={<Feed />} />

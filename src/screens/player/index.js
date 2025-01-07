@@ -28,7 +28,7 @@ export default function Player() {
       <div className="left-player-body"></div>
       <div className="right-player-body"></div>
       <SongCard album={currentTrack.album}/>
-      <Queue/>
+      {/* <Queue/> */}
     </div>
   );
 }

@@ -1,0 +1,15 @@
+.albumImage{
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.albumImage img {
+    border-radius: 10px;
+    width: 60%;
+    aspect-ratio: 1;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
