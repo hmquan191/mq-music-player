@@ -16,7 +16,8 @@ export default function AlbumInfo({ album }) {
         <div>
             <div className='albumName-container'>
                 <div className='marquee'>
-                    <p>{album?.album?.name}</p>
+                    {/* <p>{`${album?.album?.name} - ${artists.join(", ")}`}</p> */}
+                    <p>{`${album?.album?.name}`}</p>
                 </div>
             </div>
             <div className='album-info'>
